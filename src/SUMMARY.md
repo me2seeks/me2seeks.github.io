@@ -8,8 +8,11 @@
   - [Slice](interview/go/slice/README.md)
   - [Map](interview/go/map/README.md)
   
-- [concurrent ](concurrent/README.md)
+- [Concurrent ](concurrent/README.md)
   - [Read request aggregation](concurrent/read_request_aggregation.md)
   - [Write request aggregation](concurrent/write_request_aggregation.md)
   - [Rate limiting](concurrent/rate_limiting.md)
-
+- [Other categories](other_categories/README.md)
+  - [archlinux](other_categories/linux/archlinux.md)
+- [Issues and Solutions](issues_and_solutions/README.md) 
+  
