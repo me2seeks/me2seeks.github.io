@@ -14,5 +14,6 @@
   - [Rate limiting](concurrent/rate_limiting.md)
 - [Other categories](other_categories/README.md)
   - [archlinux](other_categories/linux/archlinux.md)
+  - [git](other_categories/git.md)
 - [Issues and Solutions](issues_and_solutions/README.md) 
   
