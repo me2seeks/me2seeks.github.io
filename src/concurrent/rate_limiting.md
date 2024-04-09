@@ -97,8 +97,34 @@ func main() {
 ```
 
 ```bash
-for i in {1..6}; do curl http://localhost:8080/ping; done
+go-wrk -m="get" -n 100 -t 5 http://localhost:8080/ping                                            ==========================BENCHMARK==========================
+URL:                            http://localhost:8080/ping
+
+Used Connections:               100
+Used Threads:                   5
+Total number of calls:          100
+
+===========================TIMINGS===========================
+Total time passed:              0.02s
+Avg time per request:           10.28ms
+Requests per second:            4988.03
+Median time per request:        10.33ms
+99th percentile time:           14.42ms
+Slowest time for request:       14.00ms
+
+=============================DATA=============================
+Total response body sizes:              7812
+Avg response body per request:          78.12 Byte
+Transfer rate per second:               389664.80 Byte/s (0.39 MByte/s)
+==========================RESPONSES==========================
+20X Responses:          4       (4.00%)
+30X Responses:          0       (0.00%)
+40X Responses:          96      (96.00%)
+50X Responses:          0       (0.00%)
+Errors:                 0       (0.00%)
 ```
+
+100总请求数 5线程数  花费0.02s  请求通过4个
 
 ## 每客户速率限制
 
