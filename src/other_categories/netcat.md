@@ -17,7 +17,7 @@ ncat -lvp 1589
 ncat -lvup 1589
 ```
 
-可以按 [mkcert]() 生成自签证书。
+可以按 [mkcert](me2seeks.github.io/other_categories/mkcert.html) 生成自签证书。
 
 ```bash
 # 使用 ssl 来加密通信（否则是明文的，统一网络的人可以轻松嗅探到传输内容）
